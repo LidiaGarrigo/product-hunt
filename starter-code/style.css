@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0px;
   padding: 0px;
 }
@@ -6,7 +6,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   min-width: 480px;
-  background-color: lightblue;  
+  background-color: lightblue;
 }
 
 .grid-container {
@@ -24,141 +24,130 @@ body {
     "sidebar1 today tweets sidebar2";
 }
 
-.header { 
-  grid-area: header; 
-  background-color: #FFFFFF;
+.header {
+  grid-area: header;
+  background-color: #ffffff;
   display: flex;
   justify-content: center;
-  
 }
-.header1 { 
-  grid-area: header1; 
-  background-color: #FFFFFF;
+.header1 {
+  grid-area: header1;
+  background-color: #ffffff;
 }
 
-.sidebar1 { 
+.sidebar1 {
   grid-area: sidebar1;
-
 }
 
-.sidebar2 { 
-  grid-area: sidebar2; 
+.sidebar2 {
+  grid-area: sidebar2;
 }
 
-.slack { 
-  grid-area: slack; 
-  background-color: #FFFFFF;
+.slack {
+  grid-area: slack;
+  background-color: #ffffff;
 }
 
-.chats { 
+.chats {
   grid-area: chats;
-  background-color: #FFFFFF; 
+  background-color: #ffffff;
 }
 
-.week { 
-  grid-area: week; 
-  background-color: #FFFFFF;
+.week {
+  grid-area: week;
+  background-color: #ffffff;
 }
 
-.tweets { 
-  grid-area: tweets; 
-  background-color: #FFFFFF;
+.tweets {
+  grid-area: tweets;
+  background-color: #ffffff;
 }
 
-.today { grid-area: today;
-  background-color: #FFFFFF;
+.today {
+  grid-area: today;
+  background-color: #ffffff;
 }
 
-
-
-
-
-#logo{
+#logo {
   width: 50px;
 }
-hr{
-  color: #F6F6F6;
+hr {
+  color: #f6f6f6;
 }
-.cierre{
+.cierre {
   width: 15px;
 }
-#input_shearch{
+#input_shearch {
   border: none;
 }
-ul{
+ul {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
-li{
+li {
   list-style: none;
   margin: 5px;
-  color: #B3B4B4;
+  color: #b3b4b4;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 5px;
 }
 
-.discover{
+.discover {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.header{
-display: flex;
-flex-direction: column;
-justify-content: flex-end;
-align-items: center;
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
 }
-.cabecera{
+.cabecera {
   border: solid;
   width: 63%;
 }
 
-.discover>p{
+.discover > p {
   margin-right: 10px;
-  color: #AEBDD7;
+  color: #aebdd7;
 }
-.img_input{
-border: solid #F6F6F6;
- width: 100%;
- display: flex;
+.img_input {
+  border: solid #f6f6f6;
+  width: 100%;
+  display: flex;
 }
-input{
+input {
   width: 100%;
   margin-left: 5px;
 }
-#search, .flecha{
+#search,
+.flecha {
   width: 15px;
-  height: 20px;;
+  height: 20px;
 }
-nav{
+nav {
   display: flex;
-
 }
-.navegador{
-  
+.navegador {
 }
-#home{
-  color: #3C3C40;
+#home {
+  color: #3c3c40;
   font-weight: bold;
-  background-color: #F9F9F9;
+  background-color: #f9f9f9;
   height: 70%;
-
 }
-
 
 @media screen and (max-width: 480px) {
-
   body {
-      max-width: 480px;
+    max-width: 480px;
   }
 }
-  
-@media screen and (max-width: 767px) {
 
+@media screen and (max-width: 767px) {
   body {
     max-width: 767px;
   }
@@ -171,13 +160,11 @@ nav{
   }
 }
 
-
-
 @media screen and (min-width: 960px) and (max-width: 1024px) {
   body {
     max-width: 1024px;
     min-width: 960px;
-    }
+  }
 }
 @media screen and (min-width: 1024px) and (max-width: 1200px) {
   body {

@@ -6,176 +6,164 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   min-width: 480px;
-  background-color: lightblue;
+  background-color: #F9F9F9;
 }
-
-.grid-container {
+body .grid-container {
   display: grid;
   grid-template-columns: 0.7fr 1.7fr 0.9fr 0.7fr;
-  grid-template-rows: 0.7fr 0.6fr 1.5fr 2fr 0.7fr 1fr 1fr;
+  grid-template-rows: 0.35fr 0.2fr 1.9fr 2fr 0.7fr 1fr 1fr;
   gap: 20px 20px;
-  grid-template-areas:
-    "header header header header"
-    "sidebar1 header1 header1 sidebar2"
-    "sidebar1 week slack sidebar2"
-    "sidebar1 week chats sidebar2"
-    "sidebar1 today chats sidebar2"
-    "sidebar1 today chats sidebar2"
-    "sidebar1 today tweets sidebar2";
+  grid-template-areas: "header header header header" "sidebar1 header1 header1 sidebar2" "sidebar1 week slack sidebar2" "sidebar1 week chats sidebar2" "sidebar1 today chats sidebar2" "sidebar1 today chats sidebar2" "sidebar1 today tweets sidebar2";
 }
-
-.header {
+body .grid-container .header {
   grid-area: header;
   background-color: #ffffff;
   display: flex;
   justify-content: center;
+  position: fixed;
+  width: 100%;
+  border-bottom: solid 2px #F5F5F5;
 }
-.header1 {
-  grid-area: header1;
-  background-color: #ffffff;
+body .grid-container .header .cabecera {
+  width: 63%;
 }
-
-.sidebar1 {
-  grid-area: sidebar1;
+body .grid-container .header .cabecera .discover {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: solid 1px #b3b4b4;
+  margin-top: 5px;
 }
-
-.sidebar2 {
-  grid-area: sidebar2;
-}
-
-.slack {
-  grid-area: slack;
-  background-color: #ffffff;
-}
-
-.chats {
-  grid-area: chats;
-  background-color: #ffffff;
-}
-
-.week {
-  grid-area: week;
-  background-color: #ffffff;
-}
-
-.tweets {
-  grid-area: tweets;
-  background-color: #ffffff;
-}
-
-.today {
-  grid-area: today;
-  background-color: #ffffff;
-}
-
-#logo {
+body .grid-container .header .cabecera .discover #logo {
   width: 50px;
 }
-hr {
-  color: #f6f6f6;
-}
-.cierre {
-  width: 15px;
-}
-#input_shearch {
-  border: none;
-}
-ul {
+body .grid-container .header .cabecera .discover .img_input {
+  border: solid #f6f6f6;
+  width: 85%;
+  margin-right: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-li {
+body .grid-container .header .cabecera .discover .img_input #search {
+  width: 15px;
+  height: 20px;
+  margin-left: 5px;
+}
+body .grid-container .header .cabecera .discover .img_input #input_shearch {
+  border: none;
+}
+body .grid-container .header .cabecera .discover p {
+  margin-right: 10px;
+  color: #b3b4b4;
+}
+body .grid-container .header .cabecera .navegador nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 3em;
+  width: 100%;
+}
+body .grid-container .header .cabecera .navegador nav ul {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 100%;
+}
+body .grid-container .header .cabecera .navegador nav ul li:first-of-type {
+  color: #f6f6f6;
+  font-weight: bold;
+  display: flex;
+  background-color: #b3b4b4;
+  height: 80%;
+}
+body .grid-container .header .cabecera .navegador nav ul li {
   list-style: none;
-  margin: 5px;
   color: #b3b4b4;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5px;
+  padding: 5px 17px 5px 17px;
 }
-
-.discover {
+body .grid-container .header .cabecera .navegador nav #flechas .flecha {
+  width: 15px;
+  height: 20px;
+}
+body .grid-container .header1 {
+  grid-area: header1;
+  background-color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.header {
+body .grid-container .header1 .contenido {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
-}
-.cabecera {
-  border: solid;
-  width: 63%;
-}
-
-.discover > p {
-  margin-right: 10px;
-  color: #aebdd7;
-}
-.img_input {
-  border: solid #f6f6f6;
   width: 100%;
-  display: flex;
+  font-size: 14px;
 }
-input {
+body .grid-container .header1 .contenido .welcome {
+  font-weight: bold;
+  margin-right: 5px;
+}
+body .grid-container .header1 .contenido .welcome .p_get {
+  color: #b3b4b4;
+  margin-left: 5px;
+}
+body .grid-container .header1 .contenido .welcome .p_get input {
   width: 100%;
   margin-left: 5px;
 }
-#search,
-.flecha {
+body .grid-container .header1 .contenido .welcome .p_get input .subscribe_add {
+  color: #ffffff;
+  background-color: #DA552F;
+  border: none;
+  border-radius: 2px;
+  margin: 5px;
+  padding: 5px;
+  margin-right: 25px;
+}
+body .grid-container .header1 .contenido .welcome .p_get input .subscribe_add .cierre {
   width: 15px;
-  height: 20px;
+  margin-left: 50px;
 }
-nav {
-  display: flex;
+body .grid-container .sidebar1 {
+  grid-area: sidebar1;
 }
-.navegador {
+body .grid-container .sidebar2 {
+  grid-area: sidebar2;
 }
-#home {
-  color: #3c3c40;
-  font-weight: bold;
-  background-color: #f9f9f9;
-  height: 70%;
+body .grid-container .slack {
+  grid-area: slack;
+  background-color: #ffffff;
+}
+body .grid-container .slack .subscribe_add {
+  color: #ffffff;
+  background-color: #DA552F;
+  border: none;
+  border-radius: 2px;
+  margin: 5px;
+  padding: 5px;
+  margin-right: 25px;
+}
+body .grid-container .chats {
+  grid-area: chats;
+  background-color: #ffffff;
+}
+body .grid-container .week {
+  grid-area: week;
+  background-color: #ffffff;
+}
+body .grid-container .tweets {
+  grid-area: tweets;
+  background-color: #ffffff;
+}
+body .grid-container .today {
+  grid-area: today;
+  background-color: #ffffff;
 }
 
-@media screen and (max-width: 480px) {
-  body {
-    max-width: 480px;
-  }
-}
+/*# sourceMappingURL=style.css.map */
 
-@media screen and (max-width: 767px) {
-  body {
-    max-width: 767px;
-  }
-}
-
-@media screen and (min-width: 767px) and (max-width: 961px) {
-  body {
-    max-width: 961px;
-    min-width: 767px;
-  }
-}
-
-@media screen and (min-width: 960px) and (max-width: 1024px) {
-  body {
-    max-width: 1024px;
-    min-width: 960px;
-  }
-}
-@media screen and (min-width: 1024px) and (max-width: 1200px) {
-  body {
-    min-width: 1024px;
-    max-width: 1200px;
-  }
-}
-@media screen and (min-width: 1200px) and (max-width: 1600px) {
-  body {
-    min-width: 1200px;
-    max-width: 1600px;
-  }
-}
 /*# sourceMappingURL=style.css.map */

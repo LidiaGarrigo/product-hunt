@@ -1,0 +1,214 @@
+$fondo:#F9F9F9;
+$bordes: #F5F5F5;
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  min-width: 480px;
+  background-color: $fondo;  
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 0.7fr 1.7fr 0.9fr 0.7fr;
+    grid-template-rows: 0.35fr 0.2fr 1.9fr 2fr 0.7fr 1fr 1fr;
+    gap: 20px 20px;
+    grid-template-areas:
+      "header header header header"
+      "sidebar1 header1 header1 sidebar2"
+      "sidebar1 week slack sidebar2"
+      "sidebar1 week chats sidebar2"
+      "sidebar1 today chats sidebar2"
+      "sidebar1 today chats sidebar2"
+      "sidebar1 today tweets sidebar2";
+
+      .header {
+        grid-area: header;
+        background-color: #ffffff;
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        width: 100%;
+        border-bottom: solid 2px $bordes;
+        .cabecera {
+          width: 63%;
+
+          .discover {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            border-bottom: solid 1px #b3b4b4;
+            margin-top: 5px;
+              
+            #logo {
+              width: 50px;
+            }
+              .img_input {
+                border: solid #f6f6f6;
+                width: 85%;
+                margin-right: 5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                #search{
+                  width: 15px;
+                  height: 20px;
+                  margin-left: 5px;
+                }
+                #input_shearch {
+                  border: none;
+                }
+              }
+              p{
+                margin-right: 10px;
+                color: #b3b4b4;
+              }
+            }
+            .navegador{
+
+              nav {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                height: 3em;
+                width: 100%;
+
+                ul {
+                  display: flex;
+                  justify-content: start;
+                  align-items: center;
+                  height: 100%;
+
+                  li:first-of-type{
+                    color: #f6f6f6;
+                    font-weight: bold;
+                    display: flex;
+                    background-color: #b3b4b4;
+                    height: 80%;
+                  }
+
+                  li {
+
+                    list-style: none;
+                    color: #b3b4b4;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 5px 17px 5px 17px;
+                  }
+                }
+                #flechas{
+
+                  .flecha {
+                    width: 15px;
+                    height: 20px; 
+                }
+                }
+              }
+            }
+        }
+      }             
+      .header1 {
+        grid-area: header1;
+        background-color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .contenido{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          font-size: 14px;
+          .welcome{
+            font-weight: bold;
+            margin-right: 5px;
+            .p_get{
+              color: #b3b4b4;
+              margin-left: 5px;
+              input {
+                width: 100%;
+                margin-left: 5px;
+                .subscribe_add{
+                  color: #ffffff;
+                  background-color: #DA552F;
+                  border: none;
+                  border-radius: 2px;
+                  margin: 5px;
+                  padding: 5px;
+                  margin-right: 25px;
+                  .cierre {
+                    width: 15px;
+                    margin-left: 50px;
+                  }
+                }
+              }
+            }  
+          } 
+        }
+      }
+      .sidebar1{
+        grid-area: sidebar1;
+      }  
+      .sidebar2{
+        grid-area: sidebar2;
+      }    
+
+      .slack {
+        grid-area: slack;
+        background-color: #ffffff;
+        h3{}
+        .cierre{}
+        p{}
+        .subscribe_add{
+          color: #ffffff;
+          background-color: #DA552F;
+          border: none;
+          border-radius: 2px;
+          margin: 5px;
+          padding: 5px;
+          margin-right: 25px;
+        }
+      }
+      
+      .chats {
+        grid-area: chats;
+        background-color: #ffffff;
+        h3{}
+        img{}
+        h4{}
+        p{}
+        button{}
+      }
+
+      .week {
+        grid-area: week;
+        background-color: #ffffff;
+        h3{}
+        .cierre{}
+        img{}
+        h4{}
+        p{}
+        .ranking{
+          img{}
+          p{}
+          }
+        }
+      .tweets {
+        grid-area: tweets;
+        background-color: #ffffff;   
+        }
+
+      .today {
+        grid-area: today;
+        background-color: #ffffff;
+      }
+
+  } 
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -149,9 +149,50 @@ body .grid-container .slack .subscribe_add {
   margin-right: 25px;
 }
 body .grid-container .chats {
-  grid-area: chats;
   border: solid 1px #f2f2f2;
   background-color: #ffffff;
+  display: grid;
+  grid-template-columns: 0.6fr 1.4fr;
+  grid-template-rows: 0.8fr 1.1fr 1.1fr 1.1fr 1.1fr 1.1fr 0.7fr;
+  gap: 0px 0px;
+  grid-template-areas: "titulo_chats titulo_chats" "foto1 descripcion1" "foto2 descripcion2" "foto3 descripcion3" "foto4 descripcion4" "foto5 descripcion5" "more more";
+  grid-area: chats;
+}
+body .grid-container .titulo_chats {
+  grid-area: titulo_chats;
+}
+body .grid-container .foto1 {
+  grid-area: foto1;
+}
+body .grid-container .foto2 {
+  grid-area: foto2;
+}
+body .grid-container .foto3 {
+  grid-area: foto3;
+}
+body .grid-container .foto4 {
+  grid-area: foto4;
+}
+body .grid-container .foto5 {
+  grid-area: foto5;
+}
+body .grid-container .more {
+  grid-area: more;
+}
+body .grid-container .descripcion1 {
+  grid-area: descripcion1;
+}
+body .grid-container .descripcion2 {
+  grid-area: descripcion2;
+}
+body .grid-container .descripcion3 {
+  grid-area: descripcion3;
+}
+body .grid-container .descripcion4 {
+  grid-area: descripcion4;
+}
+body .grid-container .descripcion5 {
+  grid-area: descripcion5;
 }
 body .grid-container .week {
   grid-area: week;
@@ -159,14 +200,69 @@ body .grid-container .week {
   background-color: #ffffff;
 }
 body .grid-container .tweets {
-  grid-area: tweets;
+  display: grid;
   border: solid 1px #f2f2f2;
   background-color: #ffffff;
+  grid-template-columns: 0.8fr 1.8fr 0.4fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "titulo_tweets titulo_tweets titulo_tweets" "perfil descripcion0 scroll";
+  grid-area: tweets;
+}
+body .grid-container .titulo_tweets {
+  grid-area: titulo_tweets;
+}
+body .grid-container .perfil {
+  grid-area: perfil;
+}
+body .grid-container .descripcion0 {
+  grid-area: descripcion0;
+}
+body .grid-container .scroll {
+  grid-area: scroll;
 }
 body .grid-container .today {
-  grid-area: today;
+  display: grid;
   border: solid 1px #f2f2f2;
   background-color: #ffffff;
+  grid-template-columns: 0.9fr 1.6fr 0.5fr;
+  grid-template-rows: 0.5fr 1.2fr 1.2fr 1.1fr;
+  gap: 0px 0px;
+  grid-template-areas: "titulo_today titulo_today titulo_today" "imagen01 contenido01 telefono01" "imagen02 contenido02 telefono02" "imagen03 contenido03 telefono03";
+  grid-area: today;
+}
+body .grid-container .titulo_today {
+  grid-area: titulo_today;
+}
+body .grid-container .imagen01 {
+  grid-area: imagen01;
+}
+body .grid-container .imagen02 {
+  grid-area: imagen02;
+}
+body .grid-container .imagen03 {
+  grid-area: imagen03;
+}
+body .grid-container .contenido01 {
+  grid-area: contenido01;
+}
+body .grid-container .contenido02 {
+  grid-area: contenido02;
+}
+body .grid-container .contenido03 {
+  grid-area: contenido03;
+}
+body .grid-container .telefono01 {
+  grid-area: telefono01;
+}
+body .grid-container .telefono02 {
+  grid-area: telefono02;
+}
+body .grid-container .telefono03 {
+  grid-area: telefono03;
+}
+body .grid-container .header {
+  grid-area: header;
 }
 
 /*# sourceMappingURL=style.css.map */

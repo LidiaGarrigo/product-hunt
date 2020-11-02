@@ -179,14 +179,57 @@ body {
       }
       
       .chats {
-        grid-area: chats;
         border: solid 1px $bordes;
         background-color: #ffffff;
-        h3{}
-        img{}
-        h4{}
-        p{}
-        button{}
+        display: grid;
+        grid-template-columns: 0.6fr 1.4fr;
+        grid-template-rows: 0.8fr 1.1fr 1.1fr 1.1fr 1.1fr 1.1fr 0.7fr;
+        gap: 0px 0px;
+        grid-template-areas:
+          "titulo_chats titulo_chats"
+          "foto1 descripcion1"
+          "foto2 descripcion2"
+          "foto3 descripcion3"
+          "foto4 descripcion4"
+          "foto5 descripcion5"
+          "more more";
+        grid-area: chats;
+      }
+      .titulo_chats {
+        grid-area: titulo_chats;
+      }
+      .foto1 {
+        grid-area: foto1;
+      }
+      .foto2 {
+        grid-area: foto2;
+      }
+      .foto3 {
+        grid-area: foto3;
+      }
+      .foto4 {
+        grid-area: foto4;
+      }
+      .foto5 {
+        grid-area: foto5;
+      }
+      .more {
+        grid-area: more;
+      }
+      .descripcion1 {
+        grid-area: descripcion1;
+      }
+      .descripcion2 {
+        grid-area: descripcion2;
+      }
+      .descripcion3 {
+        grid-area: descripcion3;
+      }
+      .descripcion4 {
+        grid-area: descripcion4;
+      }
+      .descripcion5 {
+        grid-area: descripcion5;
       }
 
       .week {
@@ -203,17 +246,49 @@ body {
           p{}
           }
         }
-      .tweets {
-        grid-area: tweets;
-        border: solid 1px $bordes;
-        background-color: #ffffff;   
-        }
 
-      .today {
-        grid-area: today;
-        border: solid 1px $bordes;
-        background-color: #ffffff;
-      }
+        .tweets {
+          display: grid;
+          border: solid 1px $bordes;
+          background-color: #ffffff; 
+          grid-template-columns: 0.8fr 1.8fr 0.4fr;
+          grid-template-rows: 1fr 1fr;
+          gap: 0px 0px;
+          grid-template-areas:
+            "titulo_tweets titulo_tweets titulo_tweets"
+            "perfil descripcion0 scroll";
+          grid-area: tweets;
+        }
+        .titulo_tweets { grid-area: titulo_tweets; }
+        .perfil { grid-area: perfil; }
+        .descripcion0 { grid-area: descripcion0; }
+        .scroll { grid-area: scroll; }
+
+        .today {
+          display: grid;
+          border: solid 1px $bordes;
+          background-color: #ffffff;
+          grid-template-columns: 0.9fr 1.6fr 0.5fr;
+          grid-template-rows: 0.5fr 1.2fr 1.2fr 1.1fr;
+          gap: 0px 0px;
+          grid-template-areas:
+            "titulo_today titulo_today titulo_today"
+            "imagen01 contenido01 telefono01"
+            "imagen02 contenido02 telefono02"
+            "imagen03 contenido03 telefono03";
+          grid-area: today;
+        }
+        .titulo_today { grid-area: titulo_today; }
+        .imagen01 { grid-area: imagen01; }
+        .imagen02 { grid-area: imagen02; }
+        .imagen03 { grid-area: imagen03; }
+        .contenido01 { grid-area: contenido01; }
+        .contenido02 { grid-area: contenido02; }
+        .contenido03 { grid-area: contenido03; }
+        .telefono01 { grid-area: telefono01; }
+        .telefono02 { grid-area: telefono02; }
+        .telefono03 { grid-area: telefono03; }
+        .header { grid-area: header; }
 
   } 
 }

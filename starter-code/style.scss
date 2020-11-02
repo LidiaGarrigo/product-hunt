@@ -1,5 +1,6 @@
-$fondo:#F9F9F9;
-$bordes: #F5F5F5;
+$fondo:#f9f9f9;
+$bordes: #f2f2f2;
+$color_texto: #b3b4b4;
 
 * {
   margin: 0px;
@@ -40,7 +41,7 @@ body {
             display: flex;
             justify-content: flex-start;
             align-items: center;
-            border-bottom: solid 1px #b3b4b4;
+            border-bottom: solid 2px $bordes;
             margin-top: 5px;
               
             #logo {
@@ -60,11 +61,12 @@ body {
                 }
                 #input_shearch {
                   border: none;
+                  width: 100%;
                 }
               }
               p{
                 margin-right: 10px;
-                color: #b3b4b4;
+                color: $color_texto;
               }
             }
             .navegador{
@@ -83,10 +85,9 @@ body {
                   height: 100%;
 
                   li:first-of-type{
-                    color: #f6f6f6;
-                    font-weight: bold;
+                    color: black;
                     display: flex;
-                    background-color: #b3b4b4;
+                    background-color: $fondo;
                     height: 80%;
                   }
 
@@ -117,6 +118,7 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
+        
 
         .contenido{
           display: flex;
@@ -160,6 +162,7 @@ body {
 
       .slack {
         grid-area: slack;
+        border: solid 1px $bordes;
         background-color: #ffffff;
         h3{}
         .cierre{}
@@ -177,6 +180,7 @@ body {
       
       .chats {
         grid-area: chats;
+        border: solid 1px $bordes;
         background-color: #ffffff;
         h3{}
         img{}
@@ -187,6 +191,7 @@ body {
 
       .week {
         grid-area: week;
+        border: solid 1px $bordes;
         background-color: #ffffff;
         h3{}
         .cierre{}
@@ -200,11 +205,13 @@ body {
         }
       .tweets {
         grid-area: tweets;
+        border: solid 1px $bordes;
         background-color: #ffffff;   
         }
 
       .today {
         grid-area: today;
+        border: solid 1px $bordes;
         background-color: #ffffff;
       }
 

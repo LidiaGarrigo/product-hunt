@@ -6,7 +6,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   min-width: 480px;
-  background-color: #F9F9F9;
+  background-color: #f9f9f9;
 }
 body .grid-container {
   display: grid;
@@ -22,7 +22,7 @@ body .grid-container .header {
   justify-content: center;
   position: fixed;
   width: 100%;
-  border-bottom: solid 2px #F5F5F5;
+  border-bottom: solid 2px #f2f2f2;
 }
 body .grid-container .header .cabecera {
   width: 63%;
@@ -31,7 +31,7 @@ body .grid-container .header .cabecera .discover {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  border-bottom: solid 1px #b3b4b4;
+  border-bottom: solid 2px #f2f2f2;
   margin-top: 5px;
 }
 body .grid-container .header .cabecera .discover #logo {
@@ -52,6 +52,7 @@ body .grid-container .header .cabecera .discover .img_input #search {
 }
 body .grid-container .header .cabecera .discover .img_input #input_shearch {
   border: none;
+  width: 100%;
 }
 body .grid-container .header .cabecera .discover p {
   margin-right: 10px;
@@ -71,10 +72,9 @@ body .grid-container .header .cabecera .navegador nav ul {
   height: 100%;
 }
 body .grid-container .header .cabecera .navegador nav ul li:first-of-type {
-  color: #f6f6f6;
-  font-weight: bold;
+  color: black;
   display: flex;
-  background-color: #b3b4b4;
+  background-color: #f9f9f9;
   height: 80%;
 }
 body .grid-container .header .cabecera .navegador nav ul li {
@@ -136,6 +136,7 @@ body .grid-container .sidebar2 {
 }
 body .grid-container .slack {
   grid-area: slack;
+  border: solid 1px #f2f2f2;
   background-color: #ffffff;
 }
 body .grid-container .slack .subscribe_add {
@@ -149,18 +150,22 @@ body .grid-container .slack .subscribe_add {
 }
 body .grid-container .chats {
   grid-area: chats;
+  border: solid 1px #f2f2f2;
   background-color: #ffffff;
 }
 body .grid-container .week {
   grid-area: week;
+  border: solid 1px #f2f2f2;
   background-color: #ffffff;
 }
 body .grid-container .tweets {
   grid-area: tweets;
+  border: solid 1px #f2f2f2;
   background-color: #ffffff;
 }
 body .grid-container .today {
   grid-area: today;
+  border: solid 1px #f2f2f2;
   background-color: #ffffff;
 }
 

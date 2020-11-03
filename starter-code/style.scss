@@ -14,8 +14,8 @@ body {
 
   .grid-container {
     display: grid;
-    grid-template-columns: 0.7fr 1.7fr 0.9fr 0.7fr;
-    grid-template-rows: 0.48fr 0.2fr 1.9fr 2fr 0.7fr 1fr 1fr;
+    grid-template-columns: 0.7fr 1.8fr 0.8fr 0.7fr;
+    grid-template-rows: 0.48fr 0.2fr 1fr 2.6fr 0.7fr 1fr 1fr;
     gap: 20px 20px;
     grid-template-areas:
       "header header header header"
@@ -73,7 +73,7 @@ body {
 
               nav {
                 display: flex;
-                justify-content: flex-start;
+                justify-content: space-between;
                 align-items: center;
                 height: 3em;
                 width: 100%;
@@ -102,10 +102,9 @@ body {
                   }
                 }
                 #flechas{
-
                   .flecha {
                     width: 15px;
-                    height: 20px; 
+                    height: 15px; 
                 }
                 }
               }
@@ -120,38 +119,39 @@ body {
         justify-content: center;
         align-items: center;
         
-
         .contenido{
           display: flex;
           justify-content: center;
           align-items: center;
           width: 100%;
           font-size: 14px;
+          margin-left: 33px;
           .welcome{
             font-weight: bold;
             margin-right: 5px;
-            .p_get{
+          }
+          .p_get{
               color: #b3b4b4;
               margin-left: 5px;
-              input {
-                width: 100%;
-                margin-left: 5px;
-                .subscribe_add{
+          }
+          input {
+                margin: 5px 5px 5px 15px;
+                padding: 4px;
+          }
+          .subscribe_add{
                   color: #ffffff;
                   background-color: #DA552F;
                   border: none;
                   border-radius: 2px;
                   margin: 5px;
-                  padding: 5px;
-                  margin-right: 25px;
-                  .cierre {
+                  padding: 8px;
+                  margin-right: 52px;
+                  font-size: 9px;
+          }
+          .cierre {
                     width: 15px;
-                    margin-left: 50px;
-                  }
-                }
-              }
-            }  
-          } 
+                    margin-left: 30px;
+          }
         }
       }
       .sidebar1{
@@ -165,26 +165,48 @@ body {
         grid-area: slack;
         border: solid 1px $bordes;
         background-color: #ffffff;
-        h3{}
-        .cierre{}
-        p{}
+        padding:9%;
+        .titulo_slack{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+        h3{
+          font: inherit;
+          font-size: 18px;
+        }
+        .cierre{
+          width: 15px;
+          height: 15px;
+        }
+      }
+        p{
+          color: $color_texto;
+          margin: 15px 0px 15px 0px;
+        }
         .subscribe_add{
           color: #ffffff;
           background-color: #DA552F;
           border: none;
           border-radius: 2px;
-          margin: 5px;
-          padding: 5px;
           margin-right: 25px;
+          width: 100%;
+          font-size: 13px;
+          height: 35px;
+          margin: 15px 0px 15px 0px;
+          strong{
+            font-size: 15px;
+          }
         }
       }
       
       .chats {
         border: solid 1px $bordes;
         background-color: #ffffff;
+        padding:9%;
         display: grid;
         grid-template-columns: 0.6fr 1.4fr;
-        grid-template-rows: 0.8fr 1.1fr 1.1fr 1.1fr 1.1fr 1.1fr 0.7fr;
+        grid-template-rows: 0.5fr 1.4fr 1.1fr 1.1fr 1.1fr 1.1fr 0.7fr;
         gap: 0px 0px;
         grid-template-areas:
           "titulo_chats titulo_chats"
@@ -198,40 +220,46 @@ body {
       }
       .titulo_chats {
         grid-area: titulo_chats;
+        font-size: 12px;
+        border-bottom: solid 1px $bordes;
+        margin-bottom: 30px;
       }
       .foto1 {
         grid-area: foto1;
       }
-      .foto2 {
-        grid-area: foto2;
-      }
-      .foto3 {
-        grid-area: foto3;
-      }
-      .foto4 {
-        grid-area: foto4;
-      }
-      .foto5 {
-        grid-area: foto5;
-      }
-      .more {
-        grid-area: more;
-      }
       .descripcion1 {
         grid-area: descripcion1;
+      }
+      .foto2 {
+        grid-area: foto2;
       }
       .descripcion2 {
         grid-area: descripcion2;
       }
+      .foto3 {
+        grid-area: foto3;
+      }
       .descripcion3 {
         grid-area: descripcion3;
+      }
+      .foto4 {
+        grid-area: foto4;
       }
       .descripcion4 {
         grid-area: descripcion4;
       }
+      .foto5 {
+        grid-area: foto5;
+      }
       .descripcion5 {
         grid-area: descripcion5;
       }
+      .more {
+        grid-area: more;
+      }
+    
+      
+      
 
       .week {
         display: grid;

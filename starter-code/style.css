@@ -10,8 +10,8 @@ body {
 }
 body .grid-container {
   display: grid;
-  grid-template-columns: 0.7fr 1.7fr 0.9fr 0.7fr;
-  grid-template-rows: 0.48fr 0.2fr 1.9fr 2fr 0.7fr 1fr 1fr;
+  grid-template-columns: 0.7fr 1.8fr 0.8fr 0.7fr;
+  grid-template-rows: 0.48fr 0.2fr 1fr 2.6fr 0.7fr 1fr 1fr;
   gap: 20px 20px;
   grid-template-areas: "header header header header" "sidebar1 header1 header1 sidebar2" "sidebar1 week slack sidebar2" "sidebar1 week chats sidebar2" "sidebar1 today chats sidebar2" "sidebar1 today chats sidebar2" "sidebar1 today tweets sidebar2";
 }
@@ -60,7 +60,7 @@ body .grid-container .header .cabecera .discover p {
 }
 body .grid-container .header .cabecera .navegador nav {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   height: 3em;
   width: 100%;
@@ -87,7 +87,7 @@ body .grid-container .header .cabecera .navegador nav ul li {
 }
 body .grid-container .header .cabecera .navegador nav #flechas .flecha {
   width: 15px;
-  height: 20px;
+  height: 15px;
 }
 body .grid-container .header1 {
   grid-area: header1;
@@ -103,31 +103,33 @@ body .grid-container .header1 .contenido {
   align-items: center;
   width: 100%;
   font-size: 14px;
+  margin-left: 33px;
 }
 body .grid-container .header1 .contenido .welcome {
   font-weight: bold;
   margin-right: 5px;
 }
-body .grid-container .header1 .contenido .welcome .p_get {
+body .grid-container .header1 .contenido .p_get {
   color: #b3b4b4;
   margin-left: 5px;
 }
-body .grid-container .header1 .contenido .welcome .p_get input {
-  width: 100%;
-  margin-left: 5px;
+body .grid-container .header1 .contenido input {
+  margin: 5px 5px 5px 15px;
+  padding: 4px;
 }
-body .grid-container .header1 .contenido .welcome .p_get input .subscribe_add {
+body .grid-container .header1 .contenido .subscribe_add {
   color: #ffffff;
   background-color: #DA552F;
   border: none;
   border-radius: 2px;
   margin: 5px;
-  padding: 5px;
-  margin-right: 25px;
+  padding: 8px;
+  margin-right: 52px;
+  font-size: 9px;
 }
-body .grid-container .header1 .contenido .welcome .p_get input .subscribe_add .cierre {
+body .grid-container .header1 .contenido .cierre {
   width: 15px;
-  margin-left: 50px;
+  margin-left: 30px;
 }
 body .grid-container .sidebar1 {
   grid-area: sidebar1;
@@ -139,61 +141,88 @@ body .grid-container .slack {
   grid-area: slack;
   border: solid 1px #f2f2f2;
   background-color: #ffffff;
+  padding: 9%;
+}
+body .grid-container .slack .titulo_slack {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .grid-container .slack .titulo_slack h3 {
+  font: inherit;
+  font-size: 18px;
+}
+body .grid-container .slack .titulo_slack .cierre {
+  width: 15px;
+  height: 15px;
+}
+body .grid-container .slack p {
+  color: #b3b4b4;
+  margin: 15px 0px 15px 0px;
 }
 body .grid-container .slack .subscribe_add {
   color: #ffffff;
   background-color: #DA552F;
   border: none;
   border-radius: 2px;
-  margin: 5px;
-  padding: 5px;
   margin-right: 25px;
+  width: 100%;
+  font-size: 13px;
+  height: 35px;
+  margin: 15px 0px 15px 0px;
+}
+body .grid-container .slack .subscribe_add strong {
+  font-size: 15px;
 }
 body .grid-container .chats {
   border: solid 1px #f2f2f2;
   background-color: #ffffff;
+  padding: 9%;
   display: grid;
   grid-template-columns: 0.6fr 1.4fr;
-  grid-template-rows: 0.8fr 1.1fr 1.1fr 1.1fr 1.1fr 1.1fr 0.7fr;
+  grid-template-rows: 0.5fr 1.4fr 1.1fr 1.1fr 1.1fr 1.1fr 0.7fr;
   gap: 0px 0px;
   grid-template-areas: "titulo_chats titulo_chats" "foto1 descripcion1" "foto2 descripcion2" "foto3 descripcion3" "foto4 descripcion4" "foto5 descripcion5" "more more";
   grid-area: chats;
 }
 body .grid-container .titulo_chats {
   grid-area: titulo_chats;
+  font-size: 12px;
+  border-bottom: solid 1px #f2f2f2;
+  margin-bottom: 30px;
 }
 body .grid-container .foto1 {
   grid-area: foto1;
 }
-body .grid-container .foto2 {
-  grid-area: foto2;
-}
-body .grid-container .foto3 {
-  grid-area: foto3;
-}
-body .grid-container .foto4 {
-  grid-area: foto4;
-}
-body .grid-container .foto5 {
-  grid-area: foto5;
-}
-body .grid-container .more {
-  grid-area: more;
-}
 body .grid-container .descripcion1 {
   grid-area: descripcion1;
+}
+body .grid-container .foto2 {
+  grid-area: foto2;
 }
 body .grid-container .descripcion2 {
   grid-area: descripcion2;
 }
+body .grid-container .foto3 {
+  grid-area: foto3;
+}
 body .grid-container .descripcion3 {
   grid-area: descripcion3;
+}
+body .grid-container .foto4 {
+  grid-area: foto4;
 }
 body .grid-container .descripcion4 {
   grid-area: descripcion4;
 }
+body .grid-container .foto5 {
+  grid-area: foto5;
+}
 body .grid-container .descripcion5 {
   grid-area: descripcion5;
+}
+body .grid-container .more {
+  grid-area: more;
 }
 body .grid-container .week {
   display: grid;

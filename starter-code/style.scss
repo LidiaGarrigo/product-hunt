@@ -15,7 +15,7 @@ body {
   .grid-container {
     display: grid;
     grid-template-columns: 0.7fr 1.8fr 0.8fr 0.7fr;
-    grid-template-rows: 0.48fr 0.2fr 1fr 2.6fr 0.7fr 1fr 1fr;
+    grid-template-rows: 0.48fr 0.2fr 1fr 1.2fr 1.8fr 1fr 1fr;
     gap: 20px 20px;
     grid-template-areas:
       "header header header header"
@@ -266,8 +266,8 @@ body {
         border: solid 1px $bordes;
         padding: 3%;
         background-color: #ffffff;
-        grid-template-columns: 0.5fr 1.6fr 0.5fr;
-        grid-template-rows: 0.4fr 1.4fr 1.4fr 1.4fr 0.3fr;
+        grid-template-columns: 0.5fr 2fr 0.5fr;
+        grid-template-rows: 0.4fr 0.7fr 0.7fr 0.7fr 0.3fr;
         gap: 0px 0px;
         grid-template-areas:
           "titulo_week titulo_week titulo_week"
@@ -294,19 +294,231 @@ body {
           margin-bottom: 15px;
         }
       }
-      .imagen1 { grid-area: imagen1; }
-      .contenido1 { grid-area: contenido1; }
+      .imagen1 { 
+        grid-area: imagen1;
+        border-bottom: solid 1px $bordes;
+      }
+      .contenido1 { 
+        grid-area: contenido1; 
+        border-bottom: solid 1px $bordes;
+        h4{
+          font: inherit;
+          font-size: 18px;
+          margin-bottom: 8px;
+        }
+        .paragrafo{
+          color: $color_texto;
+          margin: 5px 0px 10px 0px;
+          font-size: 13px;
+        }
+        .interaccion{
+          display: flex;
+
+        .ranking{
+          border: solid $bordes 1px;
+          width: 18%;
+          display: flex;
+          border-radius: 2px;
+          margin-right: 10px;
+        }
+        .comments{
+          border: solid $bordes 1px;
+          width: 17%;
+          display: flex;
+          border-radius: 2px;
+          justify-content: center;
+          align-items: center;
+        
+        img{
+          width: 13px;
+          height: 13px;
+          margin: 0px 8px 0px 8px;
+        }
+        p{
+          color: $color_texto;
+        }
+      }
+    }
+      }
       .telefono1 { 
         grid-area: telefono1; 
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        font-size: 13px;
+        border-bottom: solid 1px $bordes;
+        padding-bottom: 20px;
+        .movil{
+          border: solid 1px $bordes;
+          background-color: $bordes;
+          border-radius: 2px;
+          padding: 2px;
+          margin-right: 5px;
+        }
+        .cantidad{
+          color: $color_texto;
+          padding: 2px;
+        }
       }
-      .imagen2 { grid-area: imagen2; }
-      .contenido2 { grid-area: contenido2; }
-      .telefono2 { grid-area: telefono2; }
-      .imagen3 { grid-area: imagen3; }
-      .contenido3 { grid-area: contenido3; }
+      .imagen2 { 
+        grid-area: imagen2; 
+        border-bottom: solid 1px $bordes;
+        margin-top: 20px;
+      }
+
+      .contenido2 { 
+        grid-area: contenido2; 
+        border-bottom: solid 1px $bordes;
+        margin-top: 20px;
+        h4{
+          font: inherit;
+          font-size: 18px;
+          margin-bottom: 8px;
+        }
+        .paragrafo{
+          color: $color_texto;
+          margin: 5px 0px 10px 0px;
+          font-size: 13px;
+        }
+        .interaccion{
+          display: flex;
+
+        .ranking{
+          border: solid $bordes 1px;
+          width: 18%;
+          display: flex;
+          border-radius: 2px;
+          margin-right: 10px;
+        }
+        .comments{
+          border: solid $bordes 1px;
+          width: 17%;
+          display: flex;
+          border-radius: 2px;
+          justify-content: center;
+          align-items: center;
+        
+        img{
+          width: 13px;
+          height: 13px;
+          margin: 0px 8px 0px 8px;
+        }
+        p{
+          color: $color_texto;
+        }
+      }
+      .position{
+        width: 30%;
+        display: flex;
+        img{
+          width: 15px;
+          height: 15px;
+          margin-left: 15px;
+          margin-right: 5px;
+        }
+        p{
+          font-size: 13px;
+          color: $color_texto;
+        }
+      }
+    }
+  }
+      .telefono2 { 
+        grid-area: telefono2; 
+        border-bottom: solid 1px $bordes;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        font-size: 13px;
+        border-bottom: solid 1px $bordes;
+        padding-bottom: 20px;
+        .movil{
+          border: solid 1px $bordes;
+          background-color: $bordes;
+          border-radius: 2px;
+          padding: 2px;
+          margin-right: 5px;
+        }
+        .cantidad{
+          color: $color_texto;
+          padding: 2px;
+        }
+      }
+    
       
-      .telefono3 { grid-area: telefono3; }
-      .show_more { grid-area: show_more; }
+      .imagen3 { 
+        grid-area: imagen3; 
+        margin-top: 20px;
+      }
+      .contenido3 { 
+        grid-area: contenido3;
+        margin-top: 20px;
+        h4{
+          font: inherit;
+          font-size: 18px;
+          margin-bottom: 8px;
+        }
+        .paragrafo{
+          color: $color_texto;
+          margin: 5px 0px 10px 0px;
+          font-size: 13px;
+        }
+        .interaccion{
+          display: flex;
+        .ranking{
+          border: solid $bordes 1px;
+          width: 18%;
+          display: flex;
+          border-radius: 2px;
+          margin-right: 10px;
+        }
+        .comments{
+          border: solid $bordes 1px;
+          width: 17%;
+          display: flex;
+          border-radius: 2px;
+          justify-content: center;
+          align-items: center;
+        
+        img{
+          width: 13px;
+          height: 13px;
+          margin: 0px 8px 0px 8px;
+        }
+        p{
+          color: $color_texto;
+        }
+      }
+    }
+      }
+      .telefono3 { 
+        grid-area: telefono3; 
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        font-size: 13px;
+        padding-bottom: 20px;
+        .movil{
+          border: solid 1px $bordes;
+          background-color: $bordes;
+          border-radius: 2px;
+          padding: 2px;
+          margin-right: 5px;
+        }
+        .cantidad{
+          color: $color_texto;
+          padding: 2px;
+        }
+      }
+
+      .show_more { 
+        grid-area: show_more; 
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        color: $color_texto;
+        font-size: 15px;
+      }
 
         .tweets {
           display: grid;

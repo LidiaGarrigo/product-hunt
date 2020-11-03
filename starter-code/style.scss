@@ -15,7 +15,7 @@ body {
   .grid-container {
     display: grid;
     grid-template-columns: 0.7fr 1.7fr 0.9fr 0.7fr;
-    grid-template-rows: 0.35fr 0.2fr 1.9fr 2fr 0.7fr 1fr 1fr;
+    grid-template-rows: 0.48fr 0.2fr 1.9fr 2fr 0.7fr 1fr 1fr;
     gap: 20px 20px;
     grid-template-areas:
       "header header header header"
@@ -114,6 +114,7 @@ body {
       }             
       .header1 {
         grid-area: header1;
+        border: solid 1px $bordes;
         background-color: #ffffff;
         display: flex;
         justify-content: center;
@@ -233,19 +234,51 @@ body {
       }
 
       .week {
-        grid-area: week;
+        display: grid;
         border: solid 1px $bordes;
+        padding: 3%;
         background-color: #ffffff;
-        h3{}
-        .cierre{}
-        img{}
-        h4{}
-        p{}
-        .ranking{
-          img{}
-          p{}
-          }
+        grid-template-columns: 0.5fr 1.6fr 0.5fr;
+        grid-template-rows: 0.4fr 1.4fr 1.4fr 1.4fr 0.3fr;
+        gap: 0px 0px;
+        grid-template-areas:
+          "titulo_week titulo_week titulo_week"
+          "imagen1 contenido1 telefono1"
+          "imagen2 contenido2 telefono2"
+          "imagen3 contenido3 telefono3"
+          "show_more show_more show_more";
+        grid-area: week;
+      }
+      .titulo_week { 
+        grid-area: titulo_week; 
+        border-bottom: solid 2px $bordes;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 25px;
+        h3{
+          font: inherit;
+          margin-bottom: 15px;
         }
+        img{
+          width: 15px;
+          height: 15px;
+          margin-bottom: 15px;
+        }
+      }
+      .imagen1 { grid-area: imagen1; }
+      .contenido1 { grid-area: contenido1; }
+      .telefono1 { 
+        grid-area: telefono1; 
+      }
+      .imagen2 { grid-area: imagen2; }
+      .contenido2 { grid-area: contenido2; }
+      .telefono2 { grid-area: telefono2; }
+      .imagen3 { grid-area: imagen3; }
+      .contenido3 { grid-area: contenido3; }
+      
+      .telefono3 { grid-area: telefono3; }
+      .show_more { grid-area: show_more; }
 
         .tweets {
           display: grid;

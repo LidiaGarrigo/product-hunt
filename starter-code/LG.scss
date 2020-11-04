@@ -1,0 +1,14 @@
+
+@media (min-width: 992px){
+    .grid-container{
+        grid-template-areas:
+        "header header header header"
+        "sidebar1 header1 header1 sidebar2"
+        "sidebar1 week slack sidebar2"
+        "sidebar1 week chats sidebar2"
+        "sidebar1 today chats sidebar2"
+        "sidebar1 today chats sidebar2"
+        "sidebar1 today tweets sidebar2";
+    }
+}
+ 

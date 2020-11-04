@@ -1,3 +1,23 @@
+@media (min-width: 992px) {
+  .grid-container {
+    grid-template-areas: "header header header header" "sidebar1 header1 header1 sidebar2" "sidebar1 week slack sidebar2" "sidebar1 week chats sidebar2" "sidebar1 today chats sidebar2" "sidebar1 today chats sidebar2" "sidebar1 today tweets sidebar2";
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .grid-container {
+    grid-template-areas: "header header header header" "header1 header1 header1 header1" "week week week week" "today today today today";
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .grid-container {
+    grid-template-areas: "header header header" "header1 header1 header1" "week week week" "today today today";
+  }
+}
+@media (max-width: 575px) {
+  .grid-container {
+    grid-template-areas: "header header" "week week" "today today";
+  }
+}
 * {
   margin: 0px;
   padding: 0px;

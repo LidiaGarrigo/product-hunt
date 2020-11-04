@@ -1,0 +1,8 @@
+@media (max-width: 575px){
+    .grid-container{
+        grid-template-areas:
+        "header header"
+        "week week"
+        "today today";
+    }
+}

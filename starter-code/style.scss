@@ -92,7 +92,6 @@ body {
                   }
 
                   li {
-
                     list-style: none;
                     color: #b3b4b4;
                     display: flex;
@@ -539,6 +538,7 @@ body {
 
         .today {
           display: grid;
+          padding: 3%;
           border: solid 1px $bordes;
           background-color: #ffffff;
           grid-template-columns: 0.9fr 1.6fr 0.5fr;
@@ -551,19 +551,215 @@ body {
             "imagen03 contenido03 telefono03";
           grid-area: today;
         }
-        .titulo_today { grid-area: titulo_today; }
-        .imagen01 { grid-area: imagen01; }
-        .imagen02 { grid-area: imagen02; }
-        .imagen03 { grid-area: imagen03; }
-        .contenido01 { grid-area: contenido01; }
-        .contenido02 { grid-area: contenido02; }
-        .contenido03 { grid-area: contenido03; }
-        .telefono01 { grid-area: telefono01; }
-        .telefono02 { grid-area: telefono02; }
-        .telefono03 { grid-area: telefono03; }
-        .header { grid-area: header; }
+        .titulo_today { 
+          grid-area: titulo_today;
+          border-bottom: solid 2px $bordes;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 25px;
+          h3{
+          font: inherit;
+          margin-bottom: 15px;
+          } 
+        }
+        .imagen01 { 
+          grid-area: imagen01; 
+          border-bottom: solid 1px $bordes;
+          margin-top: 20px;
+        }
+        .contenido01 { 
+          grid-area: contenido01; 
+          border-bottom: solid 1px $bordes;
+          margin-top: 20px;
+        h4{
+          font: inherit;
+          font-size: 18px;
+          margin-bottom: 8px;
+        }
+        .paragrafo{
+          color: $color_texto;
+          margin: 5px 0px 10px 0px;
+          font-size: 13px;
+        }
+        .interaccion{
+          display: flex;
 
-  } 
-}
+        .ranking{
+          border: solid $bordes 1px;
+          width: 18%;
+          display: flex;
+          border-radius: 2px;
+          margin-right: 10px;
+        }
+        .comments{
+          border: solid $bordes 1px;
+          width: 17%;
+          display: flex;
+          border-radius: 2px;
+          justify-content: center;
+          align-items: center;
+        
+        img{
+          width: 13px;
+          height: 13px;
+          margin: 0px 8px 0px 8px;
+        }
+        p{
+          color: $color_texto;
+        }
+      }
+      .position{
+        width: 30%;
+        display: flex;
+        img{
+          width: 15px;
+          height: 15px;
+          margin-left: 15px;
+          margin-right: 5px;
+        }
+        p{
+          font-size: 13px;
+          color: $color_texto;
+        }
+      }
+    }
+  }
+        .telefono01 { 
+          grid-area: telefono01; 
+          display: flex;
+          justify-content: center;
+          align-items: flex-end;
+          font-size: 13px;
+          border-bottom: solid 1px $bordes;
+          padding-bottom: 20px;
+          .movil{
+          border: solid 1px $bordes;
+          background-color: $bordes;
+          border-radius: 2px;
+          padding: 2px;
+          margin-right: 5px;
+        }
+        .cantidad{
+          color: $color_texto;
+          padding: 2px;
+        }
+      }
+        }
+
+        .imagen02 { 
+          border-bottom: solid 1px $bordes;
+          grid-area: imagen02; }
+        .contenido02 { 
+          grid-area: contenido02; 
+          border-bottom: solid 1px $bordes;
+        h4{
+          font: inherit;
+          font-size: 18px;
+          margin-bottom: 8px;
+        }
+        .paragrafo{
+          color: $color_texto;
+          margin: 5px 0px 10px 0px;
+          font-size: 13px;
+        }
+        .interaccion{
+          display: flex;
+
+        .ranking{
+          border: solid $bordes 1px;
+          width: 18%;
+          display: flex;
+          border-radius: 2px;
+          margin-right: 10px;
+        }
+        .comments{
+          border: solid $bordes 1px;
+          width: 17%;
+          display: flex;
+          border-radius: 2px;
+          justify-content: center;
+          align-items: center;
+        
+        img{
+          width: 13px;
+          height: 13px;
+          margin: 0px 8px 0px 8px;
+        }
+        p{
+          color: $color_texto;
+        }
+      }
+    }
+  }
+        .telefono02 { 
+          grid-area: telefono02; 
+          display: flex;
+          justify-content: center;
+          align-items: flex-end;
+          font-size: 13px;
+          border-bottom: solid 1px $bordes;
+          padding-bottom: 20px;
+          .movil{
+          border: solid 1px $bordes;
+          background-color: $bordes;
+          border-radius: 2px;
+          padding: 2px;
+          margin-right: 5px;
+        }
+        .cantidad{
+          color: $color_texto;
+          padding: 2px;
+        }
+      }
+        }
+
+        .imagen03 { 
+          grid-area: imagen03; 
+        }
+        .contenido03 { 
+          grid-area: contenido03; 
+          
+        h4{
+          font: inherit;
+          font-size: 18px;
+          margin-bottom: 8px;
+        }
+        .paragrafo{
+          color: $color_texto;
+          margin: 5px 0px 10px 0px;
+          font-size: 13px;
+        }
+        .interaccion{
+          display: flex;
+
+        .ranking{
+          border: solid $bordes 1px;
+          width: 18%;
+          display: flex;
+          border-radius: 2px;
+          margin-right: 10px;
+        }
+        .comments{
+          border: solid $bordes 1px;
+          width: 17%;
+          display: flex;
+          border-radius: 2px;
+          justify-content: center;
+          align-items: center;
+        
+        img{
+          width: 13px;
+          height: 13px;
+          margin: 0px 8px 0px 8px;
+        }
+        p{
+          color: $color_texto;
+        }
+      }
+    }
+  
+        .telefono03 { grid-area: telefono03; }
+    }
 
 /*# sourceMappingURL=style.css.map */

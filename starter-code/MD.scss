@@ -1,9 +1,27 @@
 @media (min-width: 768px) and (max-width: 991px){
-    .grid-container{
-        grid-template-areas:
-        "header header header header"
-        "header1 header1 header1 header1"
-        "week week week week"
-        "today today today today";
+    .grid-container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 0.48fr 0.2fr 1fr 1.2fr 1.8fr 1fr;
+    gap: 20px 20px;
+    grid-template-areas:
+        "header header header "
+        "header1 header1 header1 "
+        "week week week"
+        "week week week"
+        "today today today"
+        "today today today"
+        "today today today";
+    }
+
+    .slack{
+        visibility: hidden;
+        display: none;
+    }
+    .chats{
+        visibility: hidden;
+    }
+    .tweets{
+        visibility: hidden;
     }
 }

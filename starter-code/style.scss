@@ -205,7 +205,7 @@ body {
         padding:9%;
         display: grid;
         grid-template-columns: 0.6fr 1.4fr;
-        grid-template-rows: 0.5fr 1.4fr 1.1fr 1.1fr 1.1fr 1.1fr 0.7fr;
+        grid-template-rows: 0.5fr 1.2fr 1.2fr 1.2fr 1.2fr 1.3fr 0.4fr;
         gap: 0px 0px;
         grid-template-areas:
           "titulo_chats titulo_chats"
@@ -228,33 +228,78 @@ body {
       }
       .descripcion1 {
         grid-area: descripcion1;
+        p{
+          color: $color_texto;
+          font-size: 13px;
+          margin-bottom: 10px;
+        }
+        button{
+          margin-left: 10px;
+        }
       }
       .foto2 {
         grid-area: foto2;
       }
       .descripcion2 {
         grid-area: descripcion2;
+        p{
+          color: $color_texto;
+          font-size: 13px;
+          margin-bottom: 10px;
+        }
+        button{
+          margin-left: 10px;
+        }
       }
       .foto3 {
         grid-area: foto3;
       }
       .descripcion3 {
         grid-area: descripcion3;
+        p{
+          color: $color_texto;
+          font-size: 13px;
+          margin-bottom: 10px;
+        }
+        button{
+          margin-left: 10px;
+        }
       }
       .foto4 {
         grid-area: foto4;
       }
       .descripcion4 {
         grid-area: descripcion4;
+        p{
+          color: $color_texto;
+          font-size: 13px;
+          margin-bottom: 10px;
+        }
+        button{
+          margin-left: 10px;
+        }
       }
       .foto5 {
         grid-area: foto5;
       }
       .descripcion5 {
         grid-area: descripcion5;
+        p{
+          color: $color_texto;
+          font-size: 13px;
+          margin-bottom: 10px;
+        }
+        button{
+          margin-left: 10px;
+        }
       }
       .more {
         grid-area: more;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        color: #DA552F;
+        border-top: solid 1px $bordes;
       }
     
       
@@ -522,19 +567,51 @@ body {
         .tweets {
           display: grid;
           border: solid 1px $bordes;
+          padding:9%; 
           background-color: #ffffff; 
           grid-template-columns: 0.8fr 1.8fr 0.4fr;
-          grid-template-rows: 1fr 1fr;
+          grid-template-rows: 0.7fr 1.3fr;
           gap: 0px 0px;
           grid-template-areas:
             "titulo_tweets titulo_tweets titulo_tweets"
             "perfil descripcion0 scroll";
           grid-area: tweets;
         }
-        .titulo_tweets { grid-area: titulo_tweets; }
-        .perfil { grid-area: perfil; }
-        .descripcion0 { grid-area: descripcion0; }
-        .scroll { grid-area: scroll; }
+        .titulo_tweets { 
+          grid-area: titulo_tweets; 
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          margin-bottom: 10px;
+          border-bottom: solid 1px $bordes;
+          h3{
+            font: inherit;
+            font-size: 22px;
+            margin-right: 5px;
+          }
+          .text_gris{
+            color: $color_texto;
+          }
+          .product{
+            margin-bottom: 15px;
+          }
+        }
+        .perfil { 
+          grid-area: perfil; 
+        }
+        .descripcion0 { 
+          grid-area: descripcion0; 
+          .ask{
+            margin-top: 15px;
+
+          }
+          .text_gris{
+            color: $color_texto;
+          }
+        }
+        .scroll { 
+          grid-area: scroll; 
+        }
 
         .today {
           display: grid;

@@ -180,7 +180,7 @@ body .grid-container .chats {
   padding: 9%;
   display: grid;
   grid-template-columns: 0.6fr 1.4fr;
-  grid-template-rows: 0.5fr 1.4fr 1.1fr 1.1fr 1.1fr 1.1fr 0.7fr;
+  grid-template-rows: 0.5fr 1.2fr 1.2fr 1.2fr 1.2fr 1.3fr 0.4fr;
   gap: 0px 0px;
   grid-template-areas: "titulo_chats titulo_chats" "foto1 descripcion1" "foto2 descripcion2" "foto3 descripcion3" "foto4 descripcion4" "foto5 descripcion5" "more more";
   grid-area: chats;
@@ -197,11 +197,27 @@ body .grid-container .foto1 {
 body .grid-container .descripcion1 {
   grid-area: descripcion1;
 }
+body .grid-container .descripcion1 p {
+  color: #b3b4b4;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+body .grid-container .descripcion1 button {
+  margin-left: 10px;
+}
 body .grid-container .foto2 {
   grid-area: foto2;
 }
 body .grid-container .descripcion2 {
   grid-area: descripcion2;
+}
+body .grid-container .descripcion2 p {
+  color: #b3b4b4;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+body .grid-container .descripcion2 button {
+  margin-left: 10px;
 }
 body .grid-container .foto3 {
   grid-area: foto3;
@@ -209,11 +225,27 @@ body .grid-container .foto3 {
 body .grid-container .descripcion3 {
   grid-area: descripcion3;
 }
+body .grid-container .descripcion3 p {
+  color: #b3b4b4;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+body .grid-container .descripcion3 button {
+  margin-left: 10px;
+}
 body .grid-container .foto4 {
   grid-area: foto4;
 }
 body .grid-container .descripcion4 {
   grid-area: descripcion4;
+}
+body .grid-container .descripcion4 p {
+  color: #b3b4b4;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+body .grid-container .descripcion4 button {
+  margin-left: 10px;
 }
 body .grid-container .foto5 {
   grid-area: foto5;
@@ -221,8 +253,21 @@ body .grid-container .foto5 {
 body .grid-container .descripcion5 {
   grid-area: descripcion5;
 }
+body .grid-container .descripcion5 p {
+  color: #b3b4b4;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+body .grid-container .descripcion5 button {
+  margin-left: 10px;
+}
 body .grid-container .more {
   grid-area: more;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: #DA552F;
+  border-top: solid 1px #f2f2f2;
 }
 body .grid-container .week {
   display: grid;
@@ -471,21 +516,44 @@ body .grid-container .show_more {
 body .grid-container .tweets {
   display: grid;
   border: solid 1px #f2f2f2;
+  padding: 9%;
   background-color: #ffffff;
   grid-template-columns: 0.8fr 1.8fr 0.4fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 0.7fr 1.3fr;
   gap: 0px 0px;
   grid-template-areas: "titulo_tweets titulo_tweets titulo_tweets" "perfil descripcion0 scroll";
   grid-area: tweets;
 }
 body .grid-container .titulo_tweets {
   grid-area: titulo_tweets;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 10px;
+  border-bottom: solid 1px #f2f2f2;
+}
+body .grid-container .titulo_tweets h3 {
+  font: inherit;
+  font-size: 22px;
+  margin-right: 5px;
+}
+body .grid-container .titulo_tweets .text_gris {
+  color: #b3b4b4;
+}
+body .grid-container .titulo_tweets .product {
+  margin-bottom: 15px;
 }
 body .grid-container .perfil {
   grid-area: perfil;
 }
 body .grid-container .descripcion0 {
   grid-area: descripcion0;
+}
+body .grid-container .descripcion0 .ask {
+  margin-top: 15px;
+}
+body .grid-container .descripcion0 .text_gris {
+  color: #b3b4b4;
 }
 body .grid-container .scroll {
   grid-area: scroll;

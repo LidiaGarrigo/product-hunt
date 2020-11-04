@@ -495,8 +495,8 @@ body .grid-container .today {
   padding: 3%;
   border: solid 1px #f2f2f2;
   background-color: #ffffff;
-  grid-template-columns: 0.9fr 1.6fr 0.5fr;
-  grid-template-rows: 0.5fr 1.2fr 1.2fr 1.1fr;
+  grid-template-columns: 0.6fr 1.9fr 0.5fr;
+  grid-template-rows: 0.3fr 0.7fr 0.7fr 1.9fr;
   gap: 0px 0px;
   grid-template-areas: "titulo_today titulo_today titulo_today" "imagen01 contenido01 telefono01" "imagen02 contenido02 telefono02" "imagen03 contenido03 telefono03";
   grid-area: today;
@@ -511,12 +511,16 @@ body .grid-container .titulo_today {
 }
 body .grid-container .titulo_today h3 {
   font: inherit;
-  margin-bottom: 15px;
+  font-size: 18px;
 }
 body .grid-container .imagen01 {
   grid-area: imagen01;
   border-bottom: solid 1px #f2f2f2;
   margin-top: 20px;
+}
+body .grid-container .imagen01 img {
+  width: 80px;
+  height: 80px;
 }
 body .grid-container .contenido01 {
   grid-area: contenido01;
@@ -596,10 +600,16 @@ body .grid-container .telefono01 .cantidad {
 body .imagen02 {
   border-bottom: solid 1px #f2f2f2;
   grid-area: imagen02;
+  margin-top: 20px;
+}
+body .imagen02 img {
+  width: 80px;
+  height: 80px;
 }
 body .contenido02 {
   grid-area: contenido02;
   border-bottom: solid 1px #f2f2f2;
+  margin-top: 20px;
 }
 body .contenido02 h4 {
   font: inherit;
@@ -652,6 +662,7 @@ body .telefono02 .movil {
   border-radius: 2px;
   padding: 2px;
   margin-right: 5px;
+  width: 110px;
 }
 body .telefono02 .cantidad {
   color: #b3b4b4;
@@ -660,10 +671,16 @@ body .telefono02 .cantidad {
 
 .imagen03 {
   grid-area: imagen03;
+  margin-top: 20px;
+}
+.imagen03 img {
+  width: 80px;
+  height: 80px;
 }
 
 .contenido03 {
   grid-area: contenido03;
+  margin-top: 20px;
 }
 .contenido03 h4 {
   font: inherit;
